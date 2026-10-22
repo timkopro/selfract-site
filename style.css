@@ -28,6 +28,18 @@ h1 em { font-family:Georgia,serif; font-weight:400; color:var(--acid); }
 .platform-links { display:flex; flex-wrap:wrap; gap:8px 18px; padding:8px 0; }
 .platform-links a { display:inline-flex; align-items:center; min-height:44px; text-decoration:underline; text-underline-offset:4px; }
 .platform-links a:hover { color:var(--acid); }
+.preview-jump { display:inline-flex; gap:10px; align-items:center; min-height:44px; margin:0 0 20px; color:var(--acid); text-decoration:underline; text-underline-offset:5px; }
+.preview-jump span { font-size:.8rem; }
+.preview { display:grid; grid-template-columns:minmax(0,1fr) minmax(220px,340px); gap:6vw; align-items:center; border-top:1px solid var(--line); padding:64px 10vw 70px; }
+.preview h2 em { color:var(--acid); font-family:Georgia,serif; font-weight:400; }
+.preview-description { margin:30px 0 0; font-size:1.125rem; }
+.preview-description span,.preview-note { color:var(--muted); }
+.preview-note { max-width:300px; font-size:.9375rem; }
+.preview-source { display:inline-flex; gap:12px; align-items:center; min-height:44px; margin-top:10px; text-decoration:underline; text-underline-offset:5px; }
+.preview-source:hover { color:var(--acid); }
+.preview-media { margin:0; width:100%; }
+.preview video { display:block; width:100%; height:auto; aspect-ratio:9/16; background:#000; }
+.preview video:focus-visible { outline:3px solid var(--acid); outline-offset:5px; }
 .release-meta { margin:24px 0 0; font-family:monospace; font-size:.8125rem; color:var(--muted); }
 .artwork { margin:0; transform:rotate(2deg); }
 .artwork img { display:block; width:100%; height:auto; aspect-ratio:1; object-fit:cover; }
@@ -58,6 +70,9 @@ footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px 2
  .eyebrow { margin-bottom:20px; }
  .actions { flex-direction:column; align-items:stretch; }
  .artwork { transform:none; }
+ .preview { grid-template-columns:1fr; padding:44px 6vw 50px; gap:30px; }
+ .preview-media { max-width:340px; justify-self:center; }
+ .preview-description { margin-top:22px; }
  .statement { grid-template-columns:1fr; padding:46px 6vw; gap:28px; }
  .statement .eyebrow { margin:0; }
  .statement-body { font-size:1.0625rem; }
